@@ -1,0 +1,53 @@
+/* pc : 1280
+tablet : 780
+moile : 480  */
+
+/* pc */
+@media screen and (max-width: 1280px) {
+}
+
+/* tablet*/
+@media screen and (max-width: 780px) {
+  header .nav {
+    display: none;
+  }
+
+  header .icons ul {
+    align-items: center;
+    column-gap: 1.5rem;
+  }
+
+  header .icons .user-icon a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .icons .user-icon a i,
+  header .icons .search-icon a {
+    font-size: 1.2rem;
+  }
+
+  header .icons .user-icon a em {
+    display: none;
+  }
+
+  header .icons .menu-icon {
+    display: flex;
+    align-self: center;
+    font-size: 1.2rem;
+  }
+
+  header .icons .search-icon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* moile */
+@media screen and (max-width: 480px) {
+}

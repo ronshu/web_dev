@@ -1,0 +1,16 @@
+/* Wrapper Style */
+.wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Center Offset Limit Container Style */
+.container {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0 15px;
+  max-width: 1440px;
+  position: relative;
+}
