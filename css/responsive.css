@@ -8,8 +8,33 @@ moile : 480  */
 
 /* tablet*/
 @media screen and (max-width: 780px) {
+  header .container {
+    position: static;
+  }
   header .nav {
-    display: none;
+    display: flex;
+    position: absolute;
+    top: 101%; /* 101%으로 해줘야 라인보임 */
+    width: 100%;
+    background: #fff;
+    left: 0;
+  }
+
+  header .nav ul {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    flex-direction: column; /*메뉴를 밑으로 내리려는 발악*/
+    width: 100%;
+  }
+
+  header .nav ul a {
+    padding: 1rem 0;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #efefefef;
   }
 
   header .icons ul {
