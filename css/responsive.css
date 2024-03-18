@@ -4,6 +4,13 @@ moile : 480  */
 
 /* pc */
 @media screen and (max-width: 1280px) {
+  footer .container > ul {
+    text-align: center;
+  }
+
+  footer .container > ul .sns {
+    justify-content: center;
+  }
 }
 
 /* tablet*/
@@ -18,6 +25,9 @@ moile : 480  */
     width: 100%;
     background: #fff;
     left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
   }
 
   header .nav ul {
@@ -71,8 +81,22 @@ moile : 480  */
     display: flex;
     align-items: center;
   }
+
+  footer .container > ul {
+    border-bottom: 1px solid #555;
+    padding: 1.5rem 0;
+  }
+
+  footer .container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
+  }
 }
 
 /* moile */
 @media screen and (max-width: 480px) {
+  footer .container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
 }
