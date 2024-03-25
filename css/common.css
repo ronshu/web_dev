@@ -14,3 +14,8 @@
   max-width: 1440px;
   position: relative;
 }
+
+section:not(.hero) {
+  padding: 5rem 0;
+}
+/* :not(.hero) - 히어로 빼고 적용 */

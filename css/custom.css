@@ -145,6 +145,84 @@ header .menu-icon {
   background: #777;
 }
 
+/* Intro Section Style */
+.intro {
+  background: #eee;
+}
+
+.intro-title {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.intro-title h2 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+}
+
+.intro .swiper-slide {
+  width: 25%;
+  /* position: relative; */
+}
+
+.intro .slider-image {
+  position: relative;
+  /* width: 100%; */
+  height: 220px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+}
+
+.intro .slider-image .round {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  left: 0;
+  bottom: 0;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  /* clip-path: ellipse(50% 12% at 50% 100%); */
+  /* 폴리곤도형 플러그인 사용하는 방법 : https://bennettfeely.com/clippy/ */
+}
+
+.intro .slider-image img {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.intro .slider-text {
+  padding: 1.5rem 1.5rem;
+  background: #fff;
+  /* border: 1px solid #efefef; */
+}
+
+.intro .text-middle {
+  margin: 0.75rem 0;
+}
+
+.intro .slider-text .text-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro .slider-text .text-top .star {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.intro .slider-text .text-top span {
+  color: orange;
+}
+
+.intro .slider-text .text-top span i {
+  font-size: 1.125rem;
+}
+
 /* Footer Section Style */
 footer {
   background: #212121;

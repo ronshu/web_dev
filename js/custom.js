@@ -33,3 +33,55 @@ menuBtn.addEventListener('click', function () {
   // setAttribute : 속성 값 변경하기
   // ex : <div class="a"></div> -> div.getAttribute('class','b') -> <div class="b"></div> 로 변경됨.
 });
+
+/* Swiper Plugin Options */
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  // direction: 'vertical',  //슬라이더 방향. 디폴트 : 가로
+  loop: true, //슬라이더 단방향 무한 반복
+  slidesPerView: 4,
+  spaceBetween: 20,
+
+  // If we need pagination
+  // pagination: { //슬라이더 인디케이터
+  //   el: '.swiper-pagination',
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+});
+
+function cutText(text, leng) {
+  const sl_titles = document.querySelectorAll(text);
+
+  sl_titles.forEach((txt) => {
+    const sl_txt_str = txt.textContent;
+
+    if (sl_txt_str.length > leng) {
+      txt.textContent = sl_txt_str.slice(0, leng) + '...';
+    } else {
+      txt.textContent = sl_txt_str;
+    }
+  });
+}
+
+cutText('.text-top h3', 9); //title
+cutText('.text-middle p', 50); //description
+
+const sl_title_str = sl_title.textContent;
+
+// 자바스크립트 글자 자르기 : https://gent.tistory.com/414
+
+// 다른예시) 삼항연산자 : 조건식 ? true 일 때 실행 : false일 때 실행
+// sl_title_str.length > 9
+//   ? (sl_title.textContent = sl_title_str.slice(0, 9) + '...')
+//   : (sl_title.textContent = sl_title_str);
