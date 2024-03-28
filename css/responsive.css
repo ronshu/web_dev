@@ -1,102 +1,99 @@
-/* pc : 1280
-tablet : 780
-moile : 480  */
-
+/* 1280: pc, 780: tablet, 480: mobile */
 /* pc */
-@media screen and (max-width: 1280px) {
-  footer .container > ul {
+@media screen and (max-width:1280px){
+  footer .container > ul{
     text-align: center;
   }
 
-  footer .container > ul .sns {
+  footer .container > ul .sns{
     justify-content: center;
   }
 }
 
-/* tablet*/
-@media screen and (max-width: 780px) {
-  header .container {
-    position: static;
-  }
-  header .nav {
-    display: flex;
-    position: absolute;
-    top: 101%; /* 101%으로 해줘야 라인보임 */
-    width: 100%;
-    background: #fff;
-    left: 0;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.5s;
+/* tablet */
+@media screen and (max-width:780px){
+  header .container{
+    position:static;
   }
 
-  header .nav ul {
-    position: relative;
-    left: 0;
-    top: 0;
-    transform: none;
-    flex-direction: column; /*메뉴를 밑으로 내리려는 발악*/
-    width: 100%;
+  header nav{
+    display:flex;
+    position:absolute;
+    top:101%;
+    width:100%;
+    background:#fff;
+    left:0;
+    height:0;
+    overflow:hidden;
+    transition:all 0.5s;
   }
 
-  header .nav ul a {
-    padding: 1rem 0;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    border-bottom: 1px solid #efefefef;
+  header nav ul{
+    position:relative;
+    left:0;
+    top:0;
+    transform:none;
+    flex-direction: column;
+    width:100%;
   }
 
-  header .icons ul {
-    align-items: center;
-    column-gap: 1.5rem;
+  header nav ul a{
+    padding:1rem 0;
+    text-align:center;
+    display:inline-block;
+    width:100%;
+    border-bottom:1px solid #efefef;
   }
 
-  header .icons .user-icon a {
-    width: 30px;
-    height: 30px;
+  header .icons ul{
+    column-gap: 1rem;
+  }
+
+  header .icons .user-icon a{
+    width:30px;
+    height:30px;
     border-radius: 50%;
-    display: inline-block;
-    display: flex;
+    display:inline-block;
+    display:flex;
+    align-items: center;
     justify-content: center;
+  }
+
+  header .search-icon{
+    display:flex;
     align-items: center;
   }
 
-  header .icons .user-icon a i,
-  header .icons .search-icon a {
-    font-size: 1.2rem;
+  header .icons .user-icon a i, 
+  header .search-icon i{
+    font-size:1.2rem;
   }
 
-  header .icons .user-icon a em {
-    display: none;
-  }
-
-  header .icons .menu-icon {
-    display: flex;
-    align-self: center;
-    font-size: 1.2rem;
-  }
-
-  header .icons .search-icon {
-    display: flex;
+  header .menu-icon{
+    display:flex;
     align-items: center;
+    font-size:1.2rem;
   }
 
-  footer .container > ul {
-    border-bottom: 1px solid #555;
-    padding: 1.5rem 0;
+  header .icons .user-icon a em{
+    display:none;
   }
 
-  footer .container {
+  footer .container > ul{
+    border-bottom:1px solid #555;
+    padding:1.5rem 0;
+  }
+
+  footer .container{
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 1.5rem;
+    row-gap:1.5rem;
   }
 }
 
-/* moile */
-@media screen and (max-width: 480px) {
-  footer .container {
+/* mobile */
+@media screen and (max-width:480px){
+  footer .container{
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 1rem;
+    row-gap:1rem;
   }
 }
